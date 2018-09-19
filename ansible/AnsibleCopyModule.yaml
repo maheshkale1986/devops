@@ -1,0 +1,11 @@
+---
+
+- hosts: [webservers]
+  user: root
+  vars:
+   motd_warning: 'Welcome to Ansible\n'
+  tasks:
+  - name: sample motd
+    copy:
+     dest: /etc/motd
+     content: "{{motd_warning }}"
