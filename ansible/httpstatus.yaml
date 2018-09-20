@@ -1,0 +1,9 @@
+---
+
+- hosts: [webserver]
+  user: root
+
+  tasks:
+  - name: Ensure the Apache daemon has started
+    service: name=httpd state=started
+
