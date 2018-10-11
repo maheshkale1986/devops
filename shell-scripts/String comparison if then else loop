@@ -1,0 +1,19 @@
+version=$(cat /etc/redhat-release)
+echo $version
+
+ver="CentOS Linux release 7.5.1804 (Core)"
+
+
+echo $ver
+
+if [ "$version"="$ver" ] 
+
+then
+
+echo "Yes"
+
+else
+
+echo "No"
+
+fi
