@@ -1,19 +1,9 @@
-version=$(cat /etc/redhat-release)
-echo $version
+a=10
+b=10
 
-ver="CentOS Linux release 7.5.1804 (Core)"
-
-
-echo $ver
-
-if [ "$version"="$ver" ] 
-
+if [ $a == $b ]
 then
-
-echo "Yes"
-
+   echo "a is equal to b"
 else
-
-echo "No"
-
+   echo "a is not equal to b"
 fi
