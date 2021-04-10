@@ -1,0 +1,14 @@
+---
+
+
+- hosts: servers
+ 
+  tasks:
+  - name: Create New User
+    user:
+      name: alex
+      password: $6$NxegEpaYOT4dmFw2$31LUX3WKo5crCKk9oVrDQvCot1jYmANYY9xSoj8x4HdbJxDQzgmQGtmYz5pFHcUdqpYPHMIknIXuWhUEdRcqC0
+      uid: 105
+      shell: /bin/bash
+      state: present
+
